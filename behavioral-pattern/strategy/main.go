@@ -18,5 +18,4 @@ func main() {
 	cache.setEvictionAlgo(fifo)
 
 	cache.add("e", "5")
-
 }
