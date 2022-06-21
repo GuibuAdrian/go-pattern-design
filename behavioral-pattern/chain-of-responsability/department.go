@@ -1,4 +1,4 @@
-package main
+package behavioral
 
 type department interface {
 	execute(*patient)

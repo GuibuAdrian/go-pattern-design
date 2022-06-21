@@ -1,4 +1,4 @@
-package main
+package behavioral
 
 import "fmt"
 
@@ -6,7 +6,7 @@ type doctor struct {
 	next department
 }
 
-func (d *doctor) execute(p *patient)  {
+func (d *doctor) execute(p *patient) {
 	if p.doctorCheckUpDone {
 		fmt.Println("Doctor checkup already done")
 		d.next.execute(p)
@@ -17,6 +17,6 @@ func (d *doctor) execute(p *patient)  {
 	d.next.execute(p)
 }
 
-func (d *doctor) setNext(next department)  {
+func (d *doctor) setNext(next department) {
 	d.next = next
 }

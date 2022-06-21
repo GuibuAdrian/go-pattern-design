@@ -1,6 +1,6 @@
-package main
+package behavioral
 
-func main()  {
+func main() {
 	cashier := &cashier{}
 
 	medical := &medical{}
