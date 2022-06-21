@@ -1,20 +1,20 @@
-package main
+package structural
 
 import "fmt"
 
 type Developer struct {
-	name string
+	name   string
 	salary float64
 }
 
 func initDeveloper(name string, salary float64) *Developer {
 	return &Developer{
-		name: name,
+		name:   name,
 		salary: salary,
 	}
 }
 
-func (dev *Developer) add (emp EmployeeI)  {
+func (dev *Developer) add(emp EmployeeI) {
 	//This is leaf node
 }
 
@@ -31,7 +31,7 @@ func (dev *Developer) getSalary() float64 {
 	return dev.salary
 }
 
-func (dev *Developer) remove(emp EmployeeI)  {
+func (dev *Developer) remove(emp EmployeeI) {
 	//This is leaf node
 }
 

@@ -1,4 +1,4 @@
-package main
+package structural
 
 type EmployeeI interface {
 	add(emp EmployeeI)

@@ -1,18 +1,18 @@
-package main
+package structural
 
 import "fmt"
 
-type Manager struct{
-	name string
-	salary float64
+type Manager struct {
+	name      string
+	salary    float64
 	employees []EmployeeI
 }
 
-func initManager(name string, salary float64) *Manager{
-	employees := make([]EmployeeI,1)
+func initManager(name string, salary float64) *Manager {
+	employees := make([]EmployeeI, 1)
 	return &Manager{
-		name: name,
-		salary: salary,
+		name:      name,
+		salary:    salary,
 		employees: employees,
 	}
 }
@@ -21,11 +21,11 @@ func (man *Manager) getPos(pos int) EmployeeI {
 	return man.employees[pos]
 }
 
-func (man *Manager) add(emp EmployeeI)  {
+func (man *Manager) add(emp EmployeeI) {
 	man.employees = append(man.employees, emp)
 }
 
-func (man *Manager) remove(emp EmployeeI)  {
+func (man *Manager) remove(emp EmployeeI) {
 	man.employees = removeFromSlice(man.employees, emp)
 }
 
@@ -49,7 +49,7 @@ func (man *Manager) getSalary() float64 {
 	return man.salary
 }
 
-func (man *Manager) print()  {
+func (man *Manager) print() {
 	fmt.Println("Manager:")
 	fmt.Println("Name:", man.getName())
 	fmt.Println("Salary:", man.getSalary())

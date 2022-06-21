@@ -1,35 +1,35 @@
-package main
+package structural
 
 func main() {
 	dev1 := &Developer{
-		name: "John",
+		name:   "John",
 		salary: 100000,
 	}
 	dev2 := &Developer{
-		name: "Julia",
+		name:   "Julia",
 		salary: 150000,
 	}
 	dev3 := &Developer{
-		name: "Mark",
+		name:   "Mark",
 		salary: 100000,
 	}
 	dev4 := &Developer{
-		name: "David",
+		name:   "David",
 		salary: 150000,
 	}
 
 	tmL1 := &TeamLeader{
-		name: "Carl",
+		name:   "Carl",
 		salary: 200000,
 	}
 
 	tmL2 := &TeamLeader{
-		name: "Sophie",
+		name:   "Sophie",
 		salary: 220000,
 	}
 
 	man1 := &Manager{
-		name: "Daniel",
+		name:   "Daniel",
 		salary: 25000,
 	}
 

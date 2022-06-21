@@ -1,18 +1,18 @@
-package main
+package structural
 
 import "fmt"
 
 type TeamLeader struct {
-	name string
+	name   string
 	salary float64
-	team []EmployeeI
+	team   []EmployeeI
 }
 
-func initTeamLeader(name string, salary float64) *Manager{
-	employees := make([]EmployeeI,1)
+func initTeamLeader(name string, salary float64) *Manager {
+	employees := make([]EmployeeI, 1)
 	return &Manager{
-		name: name,
-		salary: salary,
+		name:      name,
+		salary:    salary,
 		employees: employees,
 	}
 }
@@ -21,11 +21,11 @@ func (tmL *TeamLeader) getPos(pos int) EmployeeI {
 	return tmL.team[pos]
 }
 
-func (tmL *TeamLeader) add(emp EmployeeI)  {
+func (tmL *TeamLeader) add(emp EmployeeI) {
 	tmL.team = append(tmL.team, emp)
 }
 
-func (tmL *TeamLeader) remove(emp EmployeeI)  {
+func (tmL *TeamLeader) remove(emp EmployeeI) {
 	tmL.team = removeFromSlice(tmL.team, emp)
 }
 
