@@ -1,4 +1,4 @@
-package main
+package behavioral
 
 import "fmt"
 
@@ -6,7 +6,7 @@ type customer struct {
 	id string
 }
 
-func (c *customer) update(itemName string)  {
+func (c *customer) update(itemName string) {
 	fmt.Printf("Sending email to customer %s for item %s\n", c.id, itemName)
 }
 
