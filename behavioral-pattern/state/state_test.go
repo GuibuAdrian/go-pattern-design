@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	"log"
+	"testing"
 )
 
-func main() {
+func TestState(t *testing.T) {
 	vendingMachine := newVendingMachine(1, 10)
 
 	err := vendingMachine.requestItem()
