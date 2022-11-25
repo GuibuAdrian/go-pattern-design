@@ -1,4 +1,4 @@
-package main
+package behavioral
 
 type subjectI interface {
 	register(ObserverI)
